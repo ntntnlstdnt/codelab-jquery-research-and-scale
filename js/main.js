@@ -44,7 +44,7 @@
   }
 
   function expensiveCSS(price){
-    if (price > 50) {
+    if (price >= 50) {
       $('#sharePerPerson').css({"color":"red"});
     } else{
       $('#sharePerPerson').css({"color":"black"});
