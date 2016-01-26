@@ -5,7 +5,6 @@
     var num = n.toFixed(2);
     var $mileageInputs = $('#mileageRate, #numberOfRiders, #totalMiles');
 
-
 // UPDATER
   function updateInputs(){
     var mileageRate = parseFloat($('#mileageRate').val(), 10);
@@ -18,7 +17,6 @@
     // Calculating total price per person
     num = (mileageRate * totalMiles / numberOfRiders).toFixed(2);
     expensiveCSS(num);
-    console.log(num);
   }
 
   function updateMilageRateError(rate){
@@ -58,9 +56,9 @@
     $sharePerPerson.html("$" + num);
   }
   printValue();
+
 // EVENTS
   $mileageInputs.on('input', function(){
     updateInputs();
     printValue();
-
   });
