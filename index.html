@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <title>Road Trip Gas Calculator</title>
   </head>
+
   <body>
+    <div class="errorbox">
+      <p id="rateError"></p>
+      <p id="personError"></p>
+      <p id="milesError"></p>
+    </div>
     <form class="mileageInputs" method="post">
       Mileage Rate
       <input type="text" id="mileageRate" name="mileageRate" value="0.1"><br><br>
@@ -12,6 +18,7 @@
       <input type="text" id="totalMiles" name="totalMiles" value="0"><br><br>
       Number of Riders
       <input type="text" id="numberOfRiders" name="numberOfRiders" value="1"><br><br>
+
     </form>
 
     <h1 id="sharePerPerson"></h1>
