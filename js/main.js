@@ -21,7 +21,7 @@ function updateInputs(){
 
 function updateMilageRateError(rate){
   if (rate >= 0.1 && rate <= 0.5){
-      $('#rateError').html("");
+    $('#rateError').html("");
   } else {
     $('#rateError').html("Try again. Your rate should be between 0.1 and 0.5");
   }
